@@ -19,7 +19,7 @@ export default function Home() {
       <div className="flex flex-col items-center  top-8  absolute w-full px-6 sm:p-0">
       <NavBar/>
       </div>
-      <div className="flex flex-col  justify-between absolute sm:top-64 top-60 sm:w-[60%]   w-full gap-4 px-4 hidden ">
+      <div className="flex flex-col  justify-between absolute sm:top-64 top-60 sm:w-[600px]   w-full gap-4 px-4  ">
         <BookMarkCard/>
         <CollectionStatus/>   
         <div className="flex flex-col text-black bg-white p-6 gap-4 rounded-lg">
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </div>
   
-      <PaymentPage title={""} amount={0} targetLeft={0} text={""}/>
+      <PaymentPage />
     
     </main>
   );
