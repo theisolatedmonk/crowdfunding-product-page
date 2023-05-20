@@ -3,35 +3,32 @@ import heroImage from "@/images/image-hero-desktop.jpg";
 import logo from "@/images/logo.svg";
 import logoMastercraft from "@/images/logo-mastercraft.svg";
 import bookmark from "@/images/icon-bookmark.svg";
+import CollectionStatus from "./CollectionStatus";
+import ContributionTemplate from "./ContributionTemplate";
+import AboutSection from "./AboutSection";
+import BookMarkCard from "./BookMarkCard";
+import NavBar from "./NavBar";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      <Image src={heroImage} className="relative" alt={""}></Image>
-      
-      <div className="flex flex-col absolute justify-between h-80">
-        <div className="flex justify-between  top-2 bg-black w-full">
-          <Image src={logo} alt={""}></Image>
-          <div className="flex gap-2">
-            <p>About</p>
-            <p>Discover</p>
-            <p>GetStarted</p>
-          </div>
-        </div>
-
-        <div className="flex bg-white rounded-lg text-black flex-col text-center p-4 justify-center items-center">
-        <Image src={logoMastercraft} className="relative top-[-40px]" alt={""}></Image>
-          <p className="font-bold">Mastercraft Bamboo Monitor Riser</p>
-          <p className="">A beautiful & handcrafted monitor stand to reduce neck and strain.</p>
-          <div className="flex justify-between w-full">
-          <p className="p-2 rounded-3xl text-white bg-green-300 text-center">Back this projectS</p>
-          <div className="flex">
-          <Image src={bookmark} className="" alt={""}></Image>
-            <p className="p-2 rounded-3xl bg-gray-400 text-center ">Bookmark</p>
-          </div>
-          </div>
+      <Image src={heroImage} className="relative w-full" alt={""}></Image>
+      <div className="flex flex-col items-center  top-4 gap-64 absolute w-full">
+      <NavBar/>
+        <div className="flex flex-col  justify-between h-80 w-[50%] gap-4">
+        <BookMarkCard/>
+        <CollectionStatus/>   
+        <div className="flex flex-col text-black bg-white p-6 gap-4 rounded-lg">
+        <AboutSection/> 
+          <ContributionTemplate itemName={"Bamboo Stand"} amount={25} leftItem={101} discription={"You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list."}/>
+          <ContributionTemplate itemName={"Black Edition Stand "} amount={75} leftItem={64} discription={"You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included"}/>
+          <ContributionTemplate itemName={" Mahogany Special Edition"} amount={200 } leftItem={ 0} discription={"You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included"}/>
         </div>
       </div>
+      </div>
+  
+   
+    
     </main>
   );
 }
