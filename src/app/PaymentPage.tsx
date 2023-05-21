@@ -15,8 +15,8 @@ type SelectAmountType = {
 
 export default function PaymentPage() {
   return (
-    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black p-4 overflow-scroll ml-[10px] ">
-      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg  hidde flex h-fit mt-[85px] ">
+    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black p-4 overflow-auto ml-[10px] ">
+      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg  hidde flex h-fit mt-[85px]">
         <button className="flex justify-end p-4 ">
           <Image
             src={closeMenu}

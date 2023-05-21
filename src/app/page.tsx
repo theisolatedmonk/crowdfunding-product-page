@@ -13,7 +13,7 @@ import PaymentPage from "./PaymentPage";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:w-full min-w-[360px]">
+    <main className="flex min-h-screen flex-col items-center justify-between sm:w-full min-w-[360px] overflow-auto">
      <Image src={heroImage} className=" w-full  sm:flex hidden relative " alt={""}></Image>
       <Image src={heroImageMobile} className="  sm:hidden flex items-center w-full relative " alt={""}></Image>
       <div className="flex flex-col items-center  top-8  absolute w-full px-6 sm:p-0">
