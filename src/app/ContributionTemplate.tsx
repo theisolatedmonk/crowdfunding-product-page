@@ -15,7 +15,7 @@ export default function ContributionTemplate(props: TemplatType) {
       <p className="text-green-400"> pledge ${props.amount}or more</p>
     </div>
     <p className="">{props.discription}</p>
-    <div className="flex justify-between flex-col sm:flex-row ">
+    <div className="flex justify-between flex-col sm:flex-row sm:items-center gap-4">
       <div className="font-bold">64 <span className="font-normal">left</span></div>
       <p className="p-4 w-[60%] rounded-3xl bg-green-400 text-center">Select Reward</p>
     </div>
