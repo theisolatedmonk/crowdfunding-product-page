@@ -15,9 +15,9 @@ type SelectAmountType = {
 
 export default function PaymentPage() {
   return (
-    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black p-4 ">
-      <div className=" flex-col gap-4 sm:w-[570px] w-full bg-white  rounded-lg  hidde flex h-fit  ">
-        <button className="flex justify-end p-4  ">
+    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black p-4 overflow-scroll ml-[10px] ">
+      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg  hidde flex h-fit mt-[85px] ">
+        <button className="flex justify-end p-4 ">
           <Image
             src={closeMenu}
             className="w-4 h-4  flex  relative bg-black fill-black"
@@ -25,7 +25,7 @@ export default function PaymentPage() {
           ></Image>
         </button>
 
-        <div className="flex flex-col gap-4  p-8">
+        <div className="flex flex-col gap-4  p-6">
           {" "}
           <p className="font-bold text-black">Back this project</p>
           <p className="">

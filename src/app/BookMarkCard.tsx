@@ -6,7 +6,7 @@ import bookmark from "@/images/icon-bookmark.svg";
 
 export default function BookMarkCard() {
   return (
-    <div className="flex bg-white rounded-lg text-black flex-col text-center  justify-center items-center gap-4 p-4">
+    <div className="flex bg-white rounded-lg text-black flex-col text-center  justify-center items-center gap-4 p-4 w-full">
         <Image src={logoMastercraft} className="relative top-[-30px]" alt={""}></Image>
           <p className="font-bold">Mastercraft Bamboo Monitor Riser</p>
           <p className="">A beautiful & handcrafted monitor stand to reduce neck and strain.</p>
