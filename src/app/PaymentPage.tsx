@@ -5,6 +5,7 @@ import Image from "next/image";
 import closeMenu from "@/images/icon-close-menu.svg";
 import check from "@/images/icon-check.svg";
 import ThankyouCard from "./ThankyouCard";
+import MenuSection from "./MenuSection";
 
 type SelectAmountType = {
   title: string;
@@ -15,9 +16,9 @@ type SelectAmountType = {
 
 export default function PaymentPage() {
   return (
-    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black p-4 overflow-auto ml-[10px] ">
-      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg  hidde flex h-fit mt-[85px]">
-        <button className="flex justify-end p-4 ">
+    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black overflow-auto  ">
+      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg  hidden flex h-fit mt-[85px] ml-4">
+        <button className="flex justify-end p-4">
           <Image
             src={closeMenu}
             className="w-4 h-4  flex  relative bg-black fill-black"
@@ -75,7 +76,10 @@ export default function PaymentPage() {
 
       <div className="fle hidden  h-full w-full items-center justify-center">
         <ThankyouCard />
-      </div>
+      </div >
+     <div className="flex  top-0  h-full w-full items-center justify-center">
+     <MenuSection/>
+     </div>
     </div>
   );
 }
