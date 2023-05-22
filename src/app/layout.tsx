@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* bg-[hsl(0,0%,48%)] */}
-      <body className={`${inter.className} bg-[hsl(0,0%,48%)] `}>
+      <body className={`${inter.className} bg-[hsl(0,0%,95%)] `}>
         {children}  
       </body>
     </html>

@@ -14,7 +14,7 @@ import MenuSection from "./MenuSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:w-full min-w-[360px] overflow-auto bg-[hsl(0,0%,48%)]">
+    <main className="flex min-h-screen flex-col items-center justify-between sm:w-full min-w-[360px] overflow-auto ">
       <Image
         src={heroImage}
         className=" w-full  sm:flex hidden relative "
