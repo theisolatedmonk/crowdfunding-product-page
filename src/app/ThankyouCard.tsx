@@ -9,7 +9,7 @@ export default function ThankyouCard() {
     <Image src={check} className="  flex items-center" alt={""}></Image>
     <p className="font-bold"> Thank for your support!</p>
     <p className=""> Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed</p>
-    <button className="font-bold px-8 py-4 bg-green-500 rounded-3xl"> Got it</button>
+    <button className="font-bold px-8 py-4 bg-[hsl(176,50%,47%)] rounded-3xl"> Got it</button>
     </div>
   )
 }

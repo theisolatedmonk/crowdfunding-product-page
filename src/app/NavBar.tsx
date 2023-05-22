@@ -10,15 +10,15 @@ import closeMenu from "@/images/icon-close-menu.svg";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between  items-center  sm:w-[76%] w-full relative z-40">
+    <div className="flex justify-between sm:p-0 p-4 sm:justify-center  items-center   w-full sm:gap-[620px] relative z-40">
       <Image src={logo} alt={""}></Image>
-      <div className=" sm:gap-4 hidden sm:flex ">
+      <div className=" sm:gap-4 text-white hidden sm:flex ">
         <p>About</p>
         <p>Discover</p>
         <p>GetStarted</p>
       </div>
-      <button>
-      <Image src={menuImg} className="sm:hidden  flex hidden
+      
+      <Image src={menuImg} className="sm:hidden  flex 
        " />
       
       {/* <Image src={menuImg} className={`sm:hidden ${
@@ -28,10 +28,10 @@ export default function NavBar() {
 
       <Image
         src={closeMenu}
-        className="w-4 h-4  flex bg-black fill-black  sm:hidden"
+        className="w-4 h-4  flex bg-black fill-black hidden sm:hidden"
         alt={""}
         />
-      </button>
+    
       {/* <Image
         src={closeMenu}
         className="w-4 h-4  flex bg-black fill-black  sm:hidden"

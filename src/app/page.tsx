@@ -14,15 +14,15 @@ import MenuSection from "./MenuSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:w-full min-w-[360px] overflow-auto">
+    <main className="flex h-screen flex-col items-center justify-between sm:w-full min-w-[360px] overflow-auto bg-[hsl(0,0%,48%)]">
      <Image src={heroImage} className=" w-full  sm:flex hidden relative " alt={""}></Image>
       <Image src={heroImageMobile} className="  sm:hidden flex items-center w-full relative " alt={""}></Image>
-      <div className="flex flex-col items-center  top-8  absolute w-full px-4 gap-8 sm:p-0">
+      <div className="flex   top-4 sm:top-9 absolute w-full items-center">
       <NavBar/>
      
       </div>
       
-      <div className="flex flex-col  justify-between items-center  absolute sm:top-64 top-60 sm:w-[600px]   w-full gap-4 px-2  ">
+      <div className="flex flex-col  justify-between items-center  absolute sm:top-64 top-60 sm:w-[600px]   w-full gap-4 px-4 ">
         <BookMarkCard/>
         <CollectionStatus/>   
         <div className="flex flex-col text-black bg-white p-6 gap-4 rounded-lg">

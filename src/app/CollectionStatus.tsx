@@ -19,7 +19,7 @@ export default function CollectionStatus() {
         <p className="">daysleft</p>
       </div>
     </div>
-    <input type="range"  className="text-green-400 w-full" max={100000}/>
+    <input type="range"  className="text-[hsl(176,50%,47%)] w-full" max={100000}/>
   </div>
   )
 }

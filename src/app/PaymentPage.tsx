@@ -16,8 +16,8 @@ type SelectAmountType = {
 
 export default function PaymentPage() {
   return (
-    <div className=" z-40 flex w-full bg-slate-500 bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black overflow-auto hidden ">
-      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg  hidden flex h-fit mt-[85px] ml-4">
+    <div className=" z-40 flex w-full bg-[hsl(0,0%,0%)] bg-opacity-50 fixed top-0 left-0 h-screen justify-center  text-black overflow-auto p-4 sm:p-0 hidden">
+      <div className=" flex-col  sm:w-[570px] w-full bg-white  rounded-lg   flex h-fit sm:mt-[85px] sm:ml-4 mt-28">
         <button className="flex justify-end p-4">
           <Image
             src={closeMenu}
@@ -33,7 +33,7 @@ export default function PaymentPage() {
             Want to support us in bringing Mastercraft Bamboo Monitor Riser out
             in the world?
           </p>
-          <button className="flex flex-col border rounded-lg p-4 text-left focus:border-green-400">
+          <button className="flex flex-col border rounded-lg p-4 text-left focus:border-hsl(176, 72%, 28%)">
             <div className="flex gap-4">
               <input type="radio" className="w-5 h-5" />
               <p className="font-bold"> Pledge with no reward</p>
@@ -77,9 +77,7 @@ export default function PaymentPage() {
       <div className="fle hidden  h-full w-full items-center justify-center">
         <ThankyouCard />
       </div >
-     <div className="flex  top-0  h-full w-full items-center justify-center">
-     <MenuSection/>
-     </div>
+     
     </div>
   );
 }
@@ -90,10 +88,10 @@ function SelectAmount(props: SelectAmountType) {
       <div className="flex sm:justify-between p-4 rounded-lg sm:flex-row flex-col gap-4">
         <div className="flex gap-4 flex-col ">
           <div className="flex gap-4 items-center">
-            <input type="radio" className="accent-green-400 w-5 h-5  gap-4 " />
+            <input type="radio" className="accent-[hsl(176,50%,47%)] w-5 h-5  gap-4 " />
             <div className="sm:flex-row flex flex-col gap-2">
               <p className="font-bold text-left"> {props.title}</p>
-              <p className="text-green-500 text-left">
+              <p className="text-[hsl(176,50%,47%)] text-left">
                 {" "}
                 Pledge ${props.amount} or more
               </p>
@@ -109,14 +107,14 @@ function SelectAmount(props: SelectAmountType) {
       <div className=" sm:justify-between border-t hiden  p-4 gap-4 flex-col items-center sm:flex-row flex w-full">
         <p>Enter your pledge</p>
         <div className="flex gap-2 ">
-          <div className="flex  bg-slate-400 p-2 rounded-3xl items-center ">
+          <div className="flex  bg-[hsl(0,0%,48%)] p-2 rounded-3xl items-center ">
             <p className=" border-1 ">$</p>
             <input
               type="number"
-              className=" p-1 w-20 bg-slate-400 rounded-3xl border-none outline-none "
+              className=" p-1 w-20 bg-[hsl(0,0%,48%)] rounded-3xl border-none outline-none "
             />
           </div>
-          <button className="bg-green-500 rounded-full p-4"> Continue</button>
+          <button className="bg-[hsl(176,50%,47%)] rounded-full p-4"> Continue</button>
         </div>
       </div>
     </button>
